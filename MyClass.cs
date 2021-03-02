@@ -26,6 +26,7 @@ namespace OOPH_1
 
         // Properties
         string myproperty1 { get; set; }
+        
 
         // Constructors
         public MyClass()
@@ -34,6 +35,8 @@ namespace OOPH_1
         }
         public MyClass(string myprop1)
         {
+            if (myprop1 != null && !myprop1.Equals("")) 
+
             myproperty1 = myprop1;
             allowrite = false;
                 
@@ -47,7 +50,7 @@ namespace OOPH_1
         {
             return "";
         }
-        public void method2()
+        public void showmessage()
         {
             if (allowrite == true)
                 Console.WriteLine("Hello World");
@@ -56,6 +59,25 @@ namespace OOPH_1
                 Console.WriteLine("allowrite is false.");
             }
             Console.ReadKey();
+        }
+        public void showAnimalSounds(Animals animalType)
+        {
+            switch(animalType)
+            {
+                case Animals.Dog:
+                    Console.WriteLine("wov");
+                    break;
+                case Animals.Cat:
+                    Console.WriteLine("miav");
+                    break;
+                case Animals.Kanin:
+                    Console.WriteLine("squeek");
+                    break;
+                
+            }
+
+
+
         }
         
     }

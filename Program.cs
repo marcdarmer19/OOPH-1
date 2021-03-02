@@ -6,11 +6,15 @@ namespace OOPH_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            MyClass m = new MyClass();
-            m.method2();
+            
+          //  MyClass m = new MyClass("Hello World!");
+           // m.showmessage();
 
-            Console.ReadKey();
+            //var marcbirthdate = new DateTime(1994, 3, 30);
+            //Mystruct mstruct = new Mystruct(marcbirthdate);
+            //var marcAlder = mstruct.Age;
+
+            
         }
     }
 }
